@@ -6,12 +6,12 @@ import { LatestInvoice } from "@/app/lib/definitions";
 
 export default async function LatestInvoices({ latestInvoices }: { latestInvoices: LatestInvoice[] }) {
 	return (
-		<div className="flex w-full flex-col md:col-span-4">
+		<div className="flex w-full flex-col">
 			<h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>Latest Invoices</h2>
-			<div className="flex grow flex-col justify-between rounded-xl bg-gray-100 p-4">
+			<div className="flex grow flex-col justify-between rounded-xl bg-gray-100 p-4 shadow-sm">
 				{/* NOTE: Uncomment this code in Chapter 7 */}
 
-				<div className="bg-white px-6">
+				<div className="bg-white px-6 rounded-xl">
 					{latestInvoices.map((invoice, i) => {
 						return (
 							<div
