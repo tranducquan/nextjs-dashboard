@@ -1,9 +1,5 @@
 const Page = () => {
-    return (
-        <div>
-            Invoices Page
-        </div>
-    );
+	return <div>Invoices Page</div>;
 };
 
 export default Page;
